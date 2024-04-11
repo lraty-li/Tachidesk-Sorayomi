@@ -30,6 +30,7 @@ class SorayomiShimmerIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return Text("Loading");
     return Shimmer.fromColors(
       baseColor: context.colorScheme.background,
       highlightColor: context.theme.indicatorColor,
