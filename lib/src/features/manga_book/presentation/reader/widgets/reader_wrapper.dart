@@ -513,17 +513,17 @@ class ReaderView extends HookWidget {
               dragGesturePosition.value = (details.localPosition),
           onTap: toggleVisibility,
           behavior: HitTestBehavior.translucent,
-          onHorizontalDragEnd: (details) {
-            if (scrollDirection == Axis.vertical && readerSwipeChapterToggle) {
-              if (details.primaryVelocity == null) {
-                return;
-              } else if (details.primaryVelocity! > 8) {
-                prevChapter();
-              } else {
-                nextChapter();
-              }
-            }
-          },
+          // onHorizontalDragEnd: (details) {
+          //   if (scrollDirection == Axis.vertical && readerSwipeChapterToggle) {
+          //     if (details.primaryVelocity == null) {
+          //       return;
+          //     } else if (details.primaryVelocity! > 8) {
+          //       prevChapter();
+          //     } else {
+          //       nextChapter();
+          //     }
+          //   }
+          // },
           onVerticalDragEnd: (details) {
             if (scrollDirection == Axis.horizontal &&
                 readerSwipeChapterToggle) {
