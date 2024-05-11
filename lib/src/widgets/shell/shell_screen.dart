@@ -54,14 +54,15 @@ class ShellScreen extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     useEffect(() {
-      Future.microtask(
-        () => checkForUpdate(
-          title: ref.read(packageInfoProvider).appName,
-          context: context,
-          updateCallback: ref.read(aboutRepositoryProvider).checkUpdate,
-          toast: ref.read(toastProvider(context)),
-        ),
-      );
+      // do not check for upgrade on app launch
+      // Future.microtask(
+      //   () => checkForUpdate(
+      //     title: ref.read(packageInfoProvider).appName,
+      //     context: context,
+      //     updateCallback: ref.read(aboutRepositoryProvider).checkUpdate,
+      //     toast: ref.read(toastProvider(context)),
+      //   ),
+      // );
       return;
     }, []);
     if (context.isTablet) {

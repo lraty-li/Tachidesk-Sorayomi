@@ -43,7 +43,7 @@ if (keystorePropertiesFile.exists()) {
 android {
     compileSdkVersion 34 // flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
-    namespace = "com.Tachidesk.Sorayomi"
+    namespace = "com.suwayomi.tachidesk_sorayomi"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
