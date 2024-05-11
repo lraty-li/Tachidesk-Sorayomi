@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 import 'enum.dart';
 
 enum DBKeys {
-  serverUrl('http://127.0.0.1'),
+  serverUrl('http://192.168.3.221'),
   serverPort(4567),
   serverPortToggle(true),
   sourceLanguageFilter(["all", "lastUsed", "en", "localsourcelang"]),
