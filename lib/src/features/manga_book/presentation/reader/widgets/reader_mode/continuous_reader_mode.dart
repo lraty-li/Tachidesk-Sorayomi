@@ -159,11 +159,11 @@ class ContinuousReaderMode extends HookConsumerWidget {
                 mangaId: manga.id!,
                 pageIndex: index,
               ),
-              progressIndicatorBuilder: (_, __, downloadProgress) => Center(
-                child: CircularProgressIndicator(
-                  value: downloadProgress.progress,
-                ),
-              ),
+              // progressIndicatorBuilder: (_, __, downloadProgress) => Center(
+              //   child: CircularProgressIndicator(
+              //     value: downloadProgress.progress,
+              //   ),
+              // ),
               wrapper: (child) => SizedBox(
                 height: scrollDirection == Axis.vertical
                     ? context.height * .7
